@@ -1,7 +1,14 @@
 {
     "compilerOptions": {
+        "jsx": "react-jsx",
         "noUnusedLocals": false,
         "noUnusedParameters": false,
-        "verbatimModuleSyntax": false
-    }
+        "verbatimModuleSyntax": false,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true
+    },
+    "include": [
+        "src"
+    ]
 }

@@ -1,0 +1,4 @@
+[build]
+  base = "schmidgall dental clinic"
+  command = "npm run build"
+  publish = "dist"

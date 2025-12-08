@@ -1,6 +1,7 @@
 
 "use client";
 
+import { useRef } from "react";
 import AutoScroll from "embla-carousel-auto-scroll";
 
 import {
@@ -26,20 +27,19 @@ interface Logos3Props {
 const Logos3 = ({
     logos = [],
 }: Logos3Props) => {
+    const plugin = useRef(
+        AutoScroll({ playOnInit: true, speed: 1.5, stopOnInteraction: false })
+    );
+
     return (
         <section className="py-24">
             <div className="container flex flex-col items-center text-center">
-                {/*
-        <h1 className="my-6 text-2xl font-bold text-pretty lg:text-4xl text-white">
-          {heading}
-        </h1>
-        */}
             </div>
             <div className="pt-10 md:pt-16 lg:pt-20">
                 <div className="relative mx-auto flex items-center justify-center lg:max-w-5xl">
                     <Carousel
                         opts={{ loop: true }}
-                        plugins={[AutoScroll({ playOnInit: true, speed: 1.5 })]}
+                        plugins={[plugin.current]}
                     >
                         <CarouselContent className="ml-0">
                             {logos.map((logo) => (

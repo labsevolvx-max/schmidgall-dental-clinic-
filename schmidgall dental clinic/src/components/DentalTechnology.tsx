@@ -1,24 +1,39 @@
 
-import { motion } from 'framer-motion';
 import { Logos3 } from "@/components/ui/logos3";
 
 const DentalTechnology = () => {
-    const partners = [
-        "Osstem Implant",
-        "Invisalign",
-        "Precision Dental Arts",
-        "DentCare",
-        "Indian Dental Association (IDA)",
-        "Nobel Biocare",
-        "Straumann"
+    const logosData = [
+        {
+            id: "logo-1",
+            description: "Osstem Implant",
+            image: "/logos/osstem.png",
+            className: "h-20 w-auto brightness-0 invert opacity-70 hover:opacity-100 transition-opacity duration-300"
+        },
+        {
+            id: "logo-2",
+            description: "Invisalign",
+            image: "/logos/invisalign_gen.png",
+            className: "h-20 w-auto mix-blend-screen opacity-90 hover:opacity-100 transition-opacity duration-300"
+        },
+        {
+            id: "logo-3",
+            description: "Indian Dental Association",
+            image: "/logos/ida_gen.png",
+            className: "h-24 w-auto mix-blend-screen opacity-90 hover:opacity-100 transition-opacity duration-300"
+        },
+        {
+            id: "logo-4",
+            description: "Nobel Biocare",
+            image: "/logos/nobel_gen.png",
+            className: "h-20 w-auto mix-blend-screen opacity-90 hover:opacity-100 transition-opacity duration-300"
+        },
+        {
+            id: "logo-5",
+            description: "Straumann",
+            image: "/logos/straumann_gen.png",
+            className: "h-16 w-auto mix-blend-screen opacity-90 hover:opacity-100 transition-opacity duration-300"
+        }
     ];
-
-    const logosData = partners.map((partner, index) => ({
-        id: `logo-${index}`,
-        description: partner,
-        text: partner,
-        className: "h-7 w-auto"
-    }));
 
     return (
         <section className="relative py-24 overflow-hidden">
@@ -35,24 +50,16 @@ const DentalTechnology = () => {
             <div className="container mx-auto px-6 relative z-10">
                 {/* Text Content */}
                 <div className="text-center mb-0">
-                    <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
+                    <h2
                         className="text-4xl md:text-5xl font-serif font-bold text-white mb-6"
                     >
-                        Powered by the Latest in <span className="text-orange-600">Dental Technology</span>
-                    </motion.h2>
-                    <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
+                        Powered with the best <span className="text-orange-600">dental technology</span>
+                    </h2>
+                    <p
                         className="text-gray-300 max-w-2xl mx-auto text-lg"
                     >
                         Experience precision, comfort, and faster results with cutting-edge equipment.
-                    </motion.p>
+                    </p>
                 </div>
 
                 {/* Logos3 Carousel */}

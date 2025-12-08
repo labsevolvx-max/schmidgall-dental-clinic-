@@ -10,15 +10,17 @@ export default {
         primary: {
           DEFAULT: '#0f172a', // Deep Blue
           light: '#1e293b',
+          900: '#0B132B', // Navy Blue
         },
         accent: {
           DEFAULT: '#c0a062', // Gold
           light: '#d4b87e',
+          500: '#C5A065', // Muted Gold
         }
       },
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
-        serif: ['"Palatino Linotype"', '"Book Antiqua"', 'Palatino', 'serif'],
+        sans: ['Poppins', 'Montserrat', 'sans-serif'],
+        serif: ['"Playfair Display"', '"Palatino Linotype"', 'serif'],
       },
       keyframes: {
         scroll: {

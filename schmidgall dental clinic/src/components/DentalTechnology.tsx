@@ -4,34 +4,46 @@ import { Logos3 } from "@/components/ui/logos3";
 const DentalTechnology = () => {
     const logosData = [
         {
-            id: "logo-1",
-            description: "Osstem Implant",
-            image: "/logos/osstem.png",
-            className: "h-20 w-auto brightness-0 invert opacity-70 hover:opacity-100 transition-opacity duration-300"
-        },
-        {
-            id: "logo-2",
-            description: "Invisalign",
-            image: "/logos/invisalign_gen.png",
+            id: "logo-precision",
+            description: "Precision Dental Arts",
+            text: "Precision Dental Arts",
             className: "h-20 w-auto mix-blend-screen opacity-90 hover:opacity-100 transition-opacity duration-300"
         },
         {
-            id: "logo-3",
+            id: "logo-dentcare",
+            description: "DentCare",
+            text: "DentCare",
+            className: "h-20 w-auto mix-blend-screen opacity-90 hover:opacity-100 transition-opacity duration-300"
+        },
+        {
+            id: "logo-ida",
             description: "Indian Dental Association",
             image: "/logos/ida_gen.png",
             className: "h-24 w-auto mix-blend-screen opacity-90 hover:opacity-100 transition-opacity duration-300"
         },
         {
-            id: "logo-4",
+            id: "logo-nobel",
             description: "Nobel Biocare",
             image: "/logos/nobel_gen.png",
             className: "h-20 w-auto mix-blend-screen opacity-90 hover:opacity-100 transition-opacity duration-300"
         },
         {
-            id: "logo-5",
+            id: "logo-straumann",
             description: "Straumann",
             image: "/logos/straumann_gen.png",
             className: "h-16 w-auto mix-blend-screen opacity-90 hover:opacity-100 transition-opacity duration-300"
+        },
+        {
+            id: "logo-osstem",
+            description: "Osstem Implant",
+            image: "/logos/osstem.png",
+            className: "h-20 w-auto brightness-0 invert opacity-70 hover:opacity-100 transition-opacity duration-300"
+        },
+        {
+            id: "logo-invisalign",
+            description: "Invisalign",
+            image: "/logos/invisalign_gen.png",
+            className: "h-20 w-auto mix-blend-screen opacity-90 hover:opacity-100 transition-opacity duration-300"
         }
     ];
 

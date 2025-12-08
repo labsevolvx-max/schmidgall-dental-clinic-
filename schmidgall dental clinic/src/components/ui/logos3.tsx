@@ -28,7 +28,7 @@ const Logos3 = ({
     logos = [],
 }: Logos3Props) => {
     const plugin = useRef(
-        AutoScroll({ playOnInit: true, speed: 1.5, stopOnInteraction: false })
+        AutoScroll({ playOnInit: true, speed: 1, stopOnInteraction: false })
     );
 
     return (

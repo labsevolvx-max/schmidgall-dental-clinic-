@@ -43,7 +43,7 @@ import { useRef } from "react";
 // ... imports remain same
 
 function Case() {
-    const [api, setApi] = useState<CarouselApi>();
+    const [, setApi] = useState<CarouselApi>();
 
     // Memoize plugins to prevent re-initialization
     const plugin = useRef(

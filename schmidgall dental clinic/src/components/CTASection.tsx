@@ -5,14 +5,24 @@ import { motion } from 'framer-motion';
 const CTASection = () => {
     const navigate = useNavigate();
     return (
-        <section className="bg-[#f5f5f5] py-20 px-4">
-            <div className="max-w-7xl mx-auto flex justify-center">
+        <section className="relative py-20 px-4 overflow-hidden">
+            {/* Background Image with Overlay */}
+            <div className="absolute inset-0 z-0">
+                <img
+                    src="/images/dental-clinic-bg.jpg"
+                    alt="Dental Clinic Background"
+                    className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-primary-900/90 mix-blend-multiply"></div>
+            </div>
+
+            <div className="relative z-10 max-w-7xl mx-auto flex justify-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="bg-white rounded-2xl shadow-xl p-12 max-w-4xl w-full text-center"
+                    className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-12 max-w-4xl w-full text-center border border-white/20"
                 >
                     <h2 className="font-serif text-4xl md:text-5xl text-primary-900 font-bold mb-6 leading-tight">
                         Your Perfect Smile Awaits

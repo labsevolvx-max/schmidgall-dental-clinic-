@@ -19,7 +19,15 @@ export default {
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
         serif: ['"Palatino Linotype"', '"Book Antiqua"', 'Palatino', 'serif'],
-
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        }
+      },
+      animation: {
+        scroll: 'scroll 25s linear infinite',
       }
     },
   },

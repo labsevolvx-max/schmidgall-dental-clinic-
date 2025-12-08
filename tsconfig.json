@@ -9,6 +9,6 @@
         "skipLibCheck": true
     },
     "include": [
-        "src"
+        "schmidgall dental clinic/src"
     ]
 }

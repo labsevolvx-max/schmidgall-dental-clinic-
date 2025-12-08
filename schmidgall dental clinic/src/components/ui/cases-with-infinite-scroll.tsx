@@ -46,6 +46,7 @@ function Case() {
     const [, setApi] = useState<CarouselApi>();
 
     // Memoize plugins to prevent re-initialization
+    // Fix unused variable for build
     const plugin = useRef(
         AutoScroll({
             speed: 1,

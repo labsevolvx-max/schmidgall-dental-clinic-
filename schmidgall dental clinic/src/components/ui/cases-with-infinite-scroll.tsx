@@ -60,7 +60,7 @@ function Case() {
         <div className="w-full py-20 lg:py-40">
             <div className="container mx-auto">
                 <div className="flex flex-col gap-10">
-                    <h2 className="text-xl md:text-3xl md:text-5xl tracking-tighter lg:max-w-xl font-regular text-left text-white px-6">
+                    <h2 className="text-xl md:text-3xl md:text-5xl tracking-tighter w-full font-regular text-center text-white px-6 whitespace-nowrap">
                         Trusted by happy patients
                     </h2>
                     <Carousel

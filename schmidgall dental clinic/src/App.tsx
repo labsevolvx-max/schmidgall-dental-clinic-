@@ -12,9 +12,11 @@ import Footer from './components/Footer';
 import CTASection from './components/CTASection';
 import BookingForm from './components/BookingForm';
 import Affiliations from './components/Affiliations';
+import SmoothScroll from './components/SmoothScroll';
 
 const MainWebsite = () => (
   <div className="font-sans text-gray-900 antialiased">
+    <SmoothScroll />
     <Navbar />
     <main>
       <Hero />

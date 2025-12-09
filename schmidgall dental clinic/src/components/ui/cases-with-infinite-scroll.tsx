@@ -52,6 +52,7 @@ function Case() {
             speed: 1,
             stopOnInteraction: false,
             stopOnMouseEnter: false,
+            stopOnFocusIn: false,
         })
     );
 

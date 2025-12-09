@@ -7,13 +7,17 @@ const CTASection = () => {
     return (
         <section className="relative py-20 px-4 overflow-hidden">
             {/* Background Image with Overlay */}
+            {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="/images/dental-clinic-bg.jpg"
+                    src="https://images.unsplash.com/photo-1606811971618-4486d14f3f72?q=80&w=1920&auto=format&fit=crop"
                     alt="Dental Clinic Background"
                     className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-primary-900/90 mix-blend-multiply"></div>
+                <div className="absolute inset-0 bg-primary-900/80 mix-blend-multiply"></div>
+                {/* Gradient Blends for Seamless Transition */}
+                <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-primary-900 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-primary-900 to-transparent"></div>
             </div>
 
             <div className="relative z-10 max-w-7xl mx-auto flex justify-center">

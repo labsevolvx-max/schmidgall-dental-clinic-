@@ -11,6 +11,7 @@ import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import CTASection from './components/CTASection';
 import BookingForm from './components/BookingForm';
+import Affiliations from './components/Affiliations';
 
 const MainWebsite = () => (
   <div className="font-sans text-gray-900 antialiased">
@@ -19,6 +20,7 @@ const MainWebsite = () => (
       <Hero />
       <Services />
       <DentalTechnology />
+      <Affiliations />
       <Whitening />
       <Team />
       <Testimonials />
